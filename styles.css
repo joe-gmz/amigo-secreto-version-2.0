@@ -1,0 +1,166 @@
+:root {
+    --color-primario: #BBDCE5;
+    --color-secundario: #1C352D;
+    --color-terciario: #D2C1B6;
+    --fuente-principal: 'Krona One', sans-serif;
+    --fuente-secundaria: 'Montserrat', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    height: 100vh;
+    /*background-color: var(--color-primario);*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://amigosecretoonline.com/storage/blog/October2021/BH6HtXf2xxphqxsQK723.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.contenedorPrincipal {
+    display: flex;
+    flex-direction: column;
+    height: 100;
+    width: 100%;
+}
+
+.header {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
+}
+
+.titulo-principal {
+    font-family: 'Krona One', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: lch(81.26% 12.91 154.26);
+    margin-bottom: 20px;
+}
+p {
+    font-family: var(--fuente-secundaria);
+    font-size: 22px;
+    text-align: center;
+    color: white;;
+    margin-top: 10px;
+}
+.seccion-input {
+    flex: 60%;
+    display: flex;
+    /*background-color: var(--color-secundario);*/
+    flex-direction: column;
+    /*border: 1px solid #000;
+    /*border-radius: 64px 64px 0 0;*/
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.titulo-secundario {
+    font-family: var(--fuente-secundaria);
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    color: #ECFAE5;
+    margin: 10px 0;
+}
+
+/* Contenedores de entrada y botón */
+.contenedor-input {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+/*Inputs de nombres*/
+.input-nombres {
+    width: 60%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 25px 0 0 25px;
+    font-size: 18px;
+}
+
+/* Estilo del botón "Sortear amigo" */
+.contenedor-boton {
+    width: 300px;;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+ /*Estilo de entrada de texto input*/
+.estilo-texto-input {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    font-family: var(--fuente-secundaria);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+} 
+
+/* Estilo del botón "Agregar amigo" */
+button {
+    padding: 15px 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: solid 2px #000;
+    border-radius: 0 25px 25px 0;
+    background-color: var(--color-primario);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #A3D0D8;
+}
+
+/* Lista de nombres */
+ul {
+    list-style-type: none;
+    color: var(--color-primario);
+    font-family: var(--fuente-secundaria);
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.resultado-lista {
+    margin-top: 15px;
+    color: #000;
+    font-family: var(--fuente-secundaria)
+
+}
+
+.boton-sortear {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-secundario);
+    background-color: var(--color-primario);
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+.boton-sortear img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+
+

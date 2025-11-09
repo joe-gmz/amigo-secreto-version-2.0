@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <title>Juego del Amigo secreto</title>
+</head>
+<body>
+    <main class="contenedorPrincipal">
+       <header class="header"> 
+        <h1 class="titulo-principal">¡Bienvenido al juego del amigo secreto!</h1>
+        <!-- <img src="./assets/imagen-amigos.jpg" alt="Imagen de dos amigos celebrando" width="300"> -->
+       </header>
+
+       <section class="seccion-input">
+            <p>En este juego, cada participante será asignado a otro participante de manera aleatoria y secreta. </p>
+            <h2 class="titulo-secundario">Para comenzar, por favor ingresa los nombres de los participantes</h2>
+            <div class="contenedor-input">
+                <input type="text" id="nombreParticipante" class="input-nombres" class="estilo-texto-input" placeholder="Nombre del participante">
+                <button class= "boton-agregar" onclick="agregarParticipante();">Agregar participante</button>
+            </div>
+
+            <ul id="listaParticipantes" class="listaDeNombres" aria-labelledby="listaParticipantes" role="list"></ul>
+            <ul id="resultado" class="resultado-lista" aria-live="polite"></ul>
+
+            <div class="contenedor-boton">
+                <button id= "botonSorteo" class="boton-sortear" onclick="realizarSorteo();" aria-label="Sortear amigo secreto">
+                    <img src="./assets/play_circle_outline.png" alt="Icono de sorteo">
+                    Sortear amigo secreto
+                </button>
+            </div>
+         </section>
+    </main>
+    <script src="./app.js" defer></script>
+</body>
+</html>
